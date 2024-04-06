@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"pwmctrl\startup_stm32f103xb.o"
+"pwmctrl\main.o"
+"pwmctrl\gpio.o"
+"pwmctrl\tim.o"
+"pwmctrl\usart.o"
+"pwmctrl\stm32f1xx_it.o"
+"pwmctrl\stm32f1xx_hal_msp.o"
+"pwmctrl\stm32f1xx_hal_gpio_ex.o"
+"pwmctrl\stm32f1xx_hal_tim.o"
+"pwmctrl\stm32f1xx_hal_tim_ex.o"
+"pwmctrl\stm32f1xx_hal.o"
+"pwmctrl\stm32f1xx_hal_rcc.o"
+"pwmctrl\stm32f1xx_hal_rcc_ex.o"
+"pwmctrl\stm32f1xx_hal_gpio.o"
+"pwmctrl\stm32f1xx_hal_dma.o"
+"pwmctrl\stm32f1xx_hal_cortex.o"
+"pwmctrl\stm32f1xx_hal_pwr.o"
+"pwmctrl\stm32f1xx_hal_flash.o"
+"pwmctrl\stm32f1xx_hal_flash_ex.o"
+"pwmctrl\stm32f1xx_hal_exti.o"
+"pwmctrl\stm32f1xx_hal_uart.o"
+"pwmctrl\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "pwmctrl\pwmctrl.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "pwmctrl.map" -o pwmctrl\pwmctrl.axf
